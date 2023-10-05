@@ -295,8 +295,15 @@ html {
   margin: 50px 0;
 }
 
+.accordion-flush{
+  background-color: #ebebeb;
+}
 
 
+.accordion-flush ul{
+  margin-bottom: 0px;
+  list-style: url(../images/listStyle.png);
+}
 
 
 
