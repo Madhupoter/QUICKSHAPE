@@ -154,7 +154,7 @@ html {
   margin-top: 10px;
 }
 
-.nav-button .btn {
+.btn {
   background-color: #f49627;
   color: #fff;
   border-radius: 0px;
@@ -162,7 +162,7 @@ html {
   width: 150px;
 }
 
-.nav-button .btn:hover {
+.btn:hover {
   background-color: #363637;
   color: #fff;
 }
@@ -208,15 +208,131 @@ html {
 }
 
 
+.banner1 {
+  margin: 50px 0;
+}
 
-@media  (max-width:500px) {
+.banner1 h1 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f49627;
+}
+
+.artbutton {
+  display: flex;
+  align-items: end;
+  height: 75%;
+}
+
+/* .banner1 .prints{
+  padding: 30px;
+  height: 230px;
+  background-color: #ebebeb;
+} */
+
+
+
+.banner1 .prints h5 {
+  color: #f49627;
+  font-weight: bold;
+}
+
+/* .btn{
+  border-radius: 0px;
+  background-color: #f49627;
+  color: #fff;
+} */
+.banner1 .printers {
+  position: relative;
+}
+
+.banner1 .image {
+  display: block;
+  width: 100%;
+}
+
+.banner1 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.banner1 .printers:hover .overlay {
+  opacity: 1;
+}
+
+.banner1 .prints {
+  color: white;
+  position: absolute;
+  top: 30%;
+  padding: 20px;
+}
+
+.banner1 .prints a {
+  color: #000;
+}
+
+.banner1 .content {
+  padding: 30px;
+  height: 230px;
+  background-color: #ebebeb;
+}
+
+
+.banner1 .content h5 {
+  color: #f49627;
+  font-weight: bold;
+}
+
+
+.banner2{
+  margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
   .menutop {
     display: none;
   }
 
+  .navbar {
+    padding: 20px;
+  }
+
   .navbar-brand img {
     margin-top: 0px;
-    width: 50% !important;
+    width: 100% !important;
   }
 
   .nav-button {
@@ -228,11 +344,20 @@ html {
     font-size: 45px;
     line-height: unset;
   }
-    .desk-brand {
-      display: none !important;
-    }
-  
-    .mob-brand {
-      display: block !important;
-    }
+
+  .desk-brand {
+    display: none !important;
+  }
+
+  .mob-brand {
+    display: block !important;
+  }
+
+  .artbutton {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 }
