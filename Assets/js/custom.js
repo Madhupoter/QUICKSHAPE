@@ -6,19 +6,19 @@
             if ($(window).scrollTop() >100) {
                 $("#header").css("position", "fixed");
                 $("#header").css("width", "100%");
-                $(".main_video").css("height", "100px");
-                $(".media").css("display", "none");
-                
-                $(".navbar-brand").css("margin-top", "0");
-                $(".navbar-brand img").css("width", "35%");
+                $("#header").css("padding", "10px");
+                $(".navbar-brand").css("margin-top", "36px");
+                $(".navbar-brand img").css("width", "50%");
+                $(".menutop").css("display", "none");
+                $(".nav-button ").css("margin-top", "15px");
             } else {
                 $("#header").css("position", "relative");
                 $("#header").css("width", "100%");
-                $(".main_video").css("height", "100vh");
-                $(".media").css("display", "flex");
-                
-                $(".navbar-brand").css("margin-top", "-30px");
-                $(".navbar-brand img").css("width", "50%");
+                $("#header").css("padding", "0px");
+                $(".navbar-brand").css("margin-top", "0px");
+                $(".navbar-brand img").css("width", "100%");
+                $(".menutop").css("display", "flex");
+                $(".nav-button ").css("margin-top", "10px");
             }
         });
     }
