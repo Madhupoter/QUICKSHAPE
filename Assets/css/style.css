@@ -51,6 +51,10 @@ html {
   overflow: hidden;
 }
 
+.top-right a{
+ color: #5a5a5c;
+}
+
 .media .social_media i {
   color: #fff;
   font-size: 18px;
@@ -72,7 +76,7 @@ html {
 }
 
 .navbar-brand img {
-  margin-top: -30px;
+  margin-top: -18px;
   /* width: 50% !important; */
 }
 
@@ -82,7 +86,7 @@ html {
 
 .navbar-nav li a {
   color: #000 !important;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-nav .dropdown-menu li a {
@@ -195,7 +199,7 @@ html {
 }
 
 .banner {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .banner h1 {
