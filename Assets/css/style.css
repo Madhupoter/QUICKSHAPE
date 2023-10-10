@@ -110,6 +110,46 @@ html {
   display: none;
 }
 
+/* 
+.navbar-nav li {
+  list-style: none;
+  display: block;
+  float: left;
+  height: 40px;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+.dropend .dropdown-toggle {
+  color: salmon;
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: lightsalmon;
+  color: #fff;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+@media screen and (min-width: 769px) {
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: 0.5em;
+  }
+} */
+
 
 /* .bs-example {
   margin: auto;
@@ -137,6 +177,20 @@ html {
   }
 } */
 
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
 
 
 
@@ -564,12 +618,23 @@ html {
   margin-bottom: 38px;
 }
 
+.printbannermain3 {
+  background-image: url(../images/Print_Bnner_Main.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 38px;
+}
+
 .printbannerText {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 120px;
 }
+
 
 .printbanner2Text {
   display: flex;
@@ -579,15 +644,14 @@ html {
 }
 
 
-.printbanner2Text h1 {
-  width: 450px;
-  background-color: #f49627;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  text-transform: uppercase;
+.printbanner3Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
 }
+
+
 
 .printbannerText h1 {
   width: 450px;
@@ -599,6 +663,26 @@ html {
   text-transform: uppercase;
 }
 
+.printbanner2Text h1 {
+  width: 450px;
+  background-color: #f49627;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+.printbanner3Text h1 {
+  width: 450px;
+  background-color: #66552233;
+  color: #1a1818;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
 
 
 /* FDM 3D Printing */
@@ -802,6 +886,47 @@ html {
 .printmjf2 h5{
   color: #f49627;
 }
+
+
+/* VACCUM CASTING */
+
+.vaccum1{
+  padding: 50px 0px;
+}
+
+.whywe{
+  background-color: #ebebeb;
+  padding: 50px 0px;
+}
+.whywe ul {
+  list-style: url(../images/listStyle.png);
+  margin-bottom: 0;
+}
+
+.whywe ul li {
+  margin-bottom: 10px;
+}
+
+
+.applications{
+  margin: 50px 0px;
+}
+
+.applications h5{
+  color: #f49627;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
