@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-1">
                     <div class="top-right">
-                        <p><a href="">Careers</a> | <a href="">Feedback</a></p>
+                        <p><button class="careerBtn" data-bs-toggle="modal" data-bs-target="#CareerForm" >Careers</button> | <button class="feedBtn"  data-bs-toggle="modal" data-bs-target="#feedBack">Feedback</button></p>
                     </div>
                 </div>
             </div>
@@ -81,12 +81,12 @@
                                                 <a href="Printing.html" class="dropdown-item dropdown-toggle"
                                                     data-bs-toggle="dropdown">3D printing</a>
                                                 <ul class="dropdown-menu dropdown-submenu shadow">
-                                                    <li><a class="dropdown-item" href="Printing.html">FDM 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">SLA 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">SLS 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">Metal 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">Polyjet 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">MJF 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#FDM3DPrinting">FDM 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLA3DPrinting">SLA 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLS3DPrinting">SLS 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#Metal3DPrinting">Metal 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#PolyJet3DPrinting">Polyjet 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#MJF3DPrinting">MJF 3D Printing</a></li>
                                                 </ul>
                                             </li>
                                             <li><a class="dropdown-item" href="Vaccum_Casting.html"> Vaccum Casting</a></li>
@@ -112,7 +112,7 @@
                                         <a class="nav-link" href="CSRPolicy.html">CSR Policy</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                                        <a class="nav-link" href="ContactUs.html#CONTACTUS">Contact Us</a>
                                     </li>
 
                                 </ul>
@@ -132,11 +132,100 @@
 
 
 
-    <div class="printbannermain">
+    <div class="printbannermain mb-0" id="CONTACTUS">
         <div class="printbannerText">
-            <h1 class="fw-bold ">Vaccum Casting</h1>
+            <h1 class="fw-bold ">Contact Us</h1>
         </div>
     </div>
+
+
+    <section class="contact_Us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 p-0">
+                    <div class="contactu">
+                        <p>We value your interest and welcome your inquiries. Whether you have questions about our services, want to discuss a
+                        potential project, or simply want to learn more about Quick Shape, we're here to assist you.</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31109.68924802553!2d77.608411!3d12.926277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148c526009c3%3A0x110704f80983f78f!2sQuick%20Shape%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1696577469927!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-5 p-0 d-flex align-items-center">
+                    <div class="contactu">
+                        <h4 class="fw-bold">Address:</h4>
+                        <p>
+                           <b>Quick Shape Pvt. Ltd.</b> <br>
+                            145, 1st Floor, <br> 
+                            Jakkasandra Hosur Sarjapur Ring Road, <br>
+                            Sector 5, HSR Layout, <br> Bengaluru, Karnataka 560034
+                        </p>
+                        <h4 class="fw-bold">Phone:</h4>
+                        <p>
+                            Ph1:  +91 80411 26163 <br>
+                            Ph2: +91 99722 80123
+                        </p>
+                        <h4 class="fw-bold">Email:</h4>
+                        <p>
+                            connect@quickshape.net
+                        </p>
+                      
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="getin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <h3 class="text-center fw-bold">Get In Touch</h3>
+                    <p class="text-center">
+                        Feel free to reach out to us using the contact information provided above, or you can use the contact form below to send
+                        us a message directly:
+                    </p>
+                    <div class="getintouch">
+                        <form id="getinTouchForm" action="" method="post">
+                            
+                        
+                            <fieldset>
+                                <input placeholder="name" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Email Address" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Phone Number" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
+                            </fieldset>
+                            <div class="input_field captch_box">
+                                <input type="text" value="" disabled />
+                                <button class="refresh_button">
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </button>
+                            </div>
+                            <div class="input_field captch_input">
+                                <input type="text" placeholder="Enter captcha" />
+                            </div>
+                            <div class="message">Entered captcha is correct</div>
+                            <div class="input_field button disabled">
+                                <button>Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -256,11 +345,153 @@
     <div class="copyright">
         <div class="text-center">
             <div>
-                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 ISSUAE. All rights reserved. Designed by
-                    <a href="https://www.enternine.com/">E9ds</a></p>
+                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 Quick Shape. All rights reserved. Designed by
+                    <a href="https://www.enternine.com/">E9ds</a>
+                </p>
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        // Selecting necessary DOM elements
+            const captchaTextBox = document.querySelector(".captch_box input");
+            const refreshButton = document.querySelector(".refresh_button");
+            const captchaInputBox = document.querySelector(".captch_input input");
+            const message = document.querySelector(".message");
+            const submitButton = document.querySelector(".button");
+
+            // Variable to store generated captcha
+            let captchaText = null;
+
+            // Function to generate captcha
+            const generateCaptcha = () => {
+                const randomString = Math.random().toString(36).substring(2, 7);
+                const randomStringArray = randomString.split("");
+                const changeString = randomStringArray.map((char) => (Math.random() > 0.5 ? char.toUpperCase() : char));
+                captchaText = changeString.join("   ");
+                captchaTextBox.value = captchaText;
+                console.log(captchaText);
+            };
+
+            const refreshBtnClick = () => {
+                generateCaptcha();
+                captchaInputBox.value = "";
+                captchaKeyUpValidate();
+            };
+
+            const captchaKeyUpValidate = () => {
+                //Toggle submit button disable class based on captcha input field.
+                submitButton.classList.toggle("disabled", !captchaInputBox.value);
+
+                if (!captchaInputBox.value) message.classList.remove("active");
+            };
+
+            // Function to validate the entered captcha
+            const submitBtnClick = () => {
+                captchaText = captchaText
+                    .split("")
+                    .filter((char) => char !== " ")
+                    .join("");
+                message.classList.add("active");
+                // Check if the entered captcha text is correct or not
+                if (captchaInputBox.value === captchaText) {
+                    message.innerText = "Entered captcha is correct";
+                    message.style.color = "#826afb";
+                } else {
+                    message.innerText = "Entered captcha is not correct";
+                    message.style.color = "#FF2525";
+                }
+            };
+
+            // Add event listeners for the refresh button, captchaInputBox, submit button
+            refreshButton.addEventListener("click", refreshBtnClick);
+            captchaInputBox.addEventListener("keyup", captchaKeyUpValidate);
+            submitButton.addEventListener("click", submitBtnClick);
+
+            // Generate a captcha when the page loads
+            generateCaptcha();
+    </script>
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="CareerForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICK SHAPE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="submit_career_form.php" method="post" enctype="multipart/form-data" id="getinTouchForm">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="position">Position:</label>
+                        <input type="text" id="position" name="position" required><br>
+                    
+                        <label for="message">Cover Letter:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    
+                        <label for="resume">Resume (PDF only):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required><br>
+                    
+                        <div class="mt-2">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="feedBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICKSHAPE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="getinTouchForm" action="" method="post">
+                        <fieldset>
+                            <input placeholder="name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
+                        </fieldset>
+                        <div class="">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+
 
 
 
