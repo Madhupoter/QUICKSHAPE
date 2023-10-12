@@ -40,7 +40,8 @@
                 </div>
                 <div class="col-lg-1">
                     <div class="top-right">
-                        <p><a href="">Careers</a> | <a href="">Feedback</a></p>
+                        <p><button class="careerBtn" data-bs-toggle="modal" data-bs-target="#CareerForm">Careers</button> | <button
+                                class="feedBtn" data-bs-toggle="modal" data-bs-target="#feedBack">Feedback</button></p>
                     </div>
                 </div>
             </div>
@@ -81,12 +82,12 @@
                                                 <a href="Printing.html" class="dropdown-item dropdown-toggle"
                                                     data-bs-toggle="dropdown">3D printing</a>
                                                 <ul class="dropdown-menu dropdown-submenu shadow">
-                                                    <li><a class="dropdown-item" href="Printing.html">FDM 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">SLA 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">SLS 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">Metal 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">Polyjet 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html">MJF 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#FDM3DPrinting">FDM 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLA3DPrinting">SLA 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLS3DPrinting">SLS 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#Metal3DPrinting">Metal 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#PolyJet3DPrinting">Polyjet 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#MJF3DPrinting">MJF 3D Printing</a></li>
                                                 </ul>
                                             </li>
                                             <li><a class="dropdown-item" href="Vaccum_Casting.html"> Vaccum Casting</a></li>
@@ -112,7 +113,7 @@
                                         <a class="nav-link" href="CSRPolicy.html">CSR Policy</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                                        <a class="nav-link" href="ContactUs.html#CONTACTUS">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -377,11 +378,83 @@
     <div class="copyright">
         <div class="text-center">
             <div>
-                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 ISSUAE. All rights reserved. Designed by
-                    <a href="https://www.enternine.com/">E9ds</a></p>
+                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 Quick Shape. All rights reserved. Designed by
+                    <a href="https://www.enternine.com/">E9ds</a>
+                </p>
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="CareerForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICK SHAPE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="submit_career_form.php" method="post" enctype="multipart/form-data" id="getinTouchForm">
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+    
+                        <label for="position">Position:</label>
+                        <input type="text" id="position" name="position" required><br>
+    
+                        <label for="message">Cover Letter:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    
+                        <label for="resume">Resume (PDF only):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required><br>
+    
+                        <div class="mt-2">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="feedBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICKSHAPE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="getinTouchForm" action="" method="post">
+                        <fieldset>
+                            <input placeholder="name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
+                        </fieldset>
+                        <div class="">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 

@@ -103,12 +103,17 @@ html {
   display: block;
   width: 100%;
   height: 18px;
-  margin-top: -33px;
+  margin-top: -30px;
 }
 
 .navbar-nav .dropdown-menu li:nth-child(-n+7):after {
   display: none;
 }
+
+
+
+
+
 
 
 
@@ -140,7 +145,7 @@ html {
 } */
 
 
-.dropdown-submenu>a:after {
+/* .dropdown-submenu>a:after {
   display: block;
   content: " ";
   float: right;
@@ -157,6 +162,8 @@ html {
 
 
 
+
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
@@ -167,6 +174,47 @@ html {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 10px;
+  }
+} */
+
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* .dropend .dropdown-toggle {
+  margin-left: 1em;
+} */
+
+.dropdown-item:hover {
+  color: #fff;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  .dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: end;
   }
 }
 
@@ -1044,19 +1092,19 @@ ul li strong {
 }
 
 
-.contact_journey{
+.contact_journey {
   padding: 50px 0px;
 }
 
-.industries_we{
+.industries_we {
   padding: 50px 0;
 }
 
-.industries_we_serve img{
+.industries_we_serve img {
   width: 50%;
 }
 
-.industries_we_serve{
+.industries_we_serve {
   display: flex;
   align-items: center;
 }
@@ -1318,6 +1366,218 @@ ul li strong {
 }
 
 
+.csr_policy {
+  padding: 50px 0px;
+}
+
+.contact_Us {
+  background-image: url(../images/Gallery/360_F_449975564_k4CWo5jhw4ftfwnp1oOJuvlEnFLQre0n.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin: 0px 0px 50px;
+  padding: 100px 0px;
+}
+
+.contact_Us .contactu {
+  background-color: #66552233;
+  color: #fff;
+  padding: 20px;
+}
+
+
+.input_field {
+  position: relative;
+  height: 45px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.refresh_button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #f49627;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.refresh_button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.input_field input,
+.button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.input_field input {
+  padding: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.captch_box input {
+  color: #6b6b6b;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.captch_input input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.message {
+  font-size: 14px;
+  margin: 14px 0;
+  color: #826afb;
+  display: none;
+}
+
+.message.active {
+  display: block;
+}
+
+.button button {
+  background: #f49627;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button button:active {
+  transform: scale(0.99);
+}
+
+.button.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.getin {
+  padding-bottom: 50px;
+}
+
+#getinTouchForm h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#getinTouchForm h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#getinTouchForm input[type="text"],
+#getinTouchForm input[type="email"],
+#getinTouchForm input[type="tel"],
+#getinTouchForm input[type="url"],
+#getinTouchForm textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#getinTouchForm input[type="text"]:hover,
+#getinTouchForm input[type="email"]:hover,
+#getinTouchForm input[type="tel"]:hover,
+#getinTouchForm input[type="url"]:hover,
+#getinTouchForm textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#getinTouchForm textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#getinTouchForm button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #f0715f;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#getinTouchForm button[type="submit"]:hover {
+  background: #f07150;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#getinTouchForm button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#getinTouchForm input:focus,
+#getinTouchForm textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+#getinTouchForm {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.careerBtn {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.feedBtn {
+  border: none !important;
+  background-color: transparent !important;
+}
 
 
 
@@ -1357,6 +1617,19 @@ ul li strong {
 
 
 
+
+
+.deskRead {
+  display: block !important;
+}
+
+.mobiRead {
+  display: none !important;
+}
+
+.commitText {
+  display: none !important;
+}
 
 
 
@@ -1416,12 +1689,111 @@ ul li strong {
     padding: 10px;
   }
 
-  .abtbanner2 .ourComprehensive {
-    margin-bottom: 20px;
-  }
+
 
   .abtbanner2 .ourComprehensive .Compr_Ser {
     height: auto;
+  }
+
+  .banner1 .overlay {
+    display: none !important;
+  }
+
+  .banner1 .content {
+    padding: 20px;
+    height: auto;
+    background-color: #ebebeb;
+  }
+
+  .deskRead {
+    display: none !important;
+  }
+
+  .mobiRead {
+    display: block !important;
+  }
+
+  .commitText {
+    display: block !important;
+    padding: 10px;
+    background-color: #6b6b6b;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .commitText h6 {
+    color: #f49627;
+    font-weight: bold;
+  }
+
+  .banner4 .overlay {
+    display: none !important;
+  }
+
+
+  .footer_icons,
+  .usefulLinks {
+    margin-bottom: 20px;
+  }
+
+  .abtbanner3 .produ_cap {
+    display: block !important;
+  }
+
+  .abtbanner {
+    padding-top: 30px;
+  }
+
+  .abtbanner3 .produ_cap img {
+    width: 100%;
+  }
+
+  .abtbanner2 .col-lg-3:nth-child(-n+3):after {
+    display: none;
+  }
+
+  .abtbanner2 .ourComprehensive .Compr_Serv {
+    padding: 10px;
+    height: auto;
+    color: #000;
+  }
+
+  .abtbanner2 .ourComprehensive {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #000;
+  }
+
+  .applications {
+    margin: 20px 0px;
+  }
+
+  .printsls .printslsLaser {
+    padding: 20px !important;
+  }
+  .printbanner1 .printbanner1Fused {
+    padding: 20px;
+  }
+  .printslaban1 .printslaban1Ster {
+    padding: 20px;
+  }
+  .printmetal .printmetalMetal {
+    padding: 20px;
+  }
+  .printpolyjet .printpolyjetPolyJet {
+    padding: 20px;
+  }
+  .printmjf .printmjfMulti {
+    padding: 20px;
+  }
+  .vaccum1 .banerparas {
+    padding: 20px;
+  }
+  .Frequently .FAQ {
+    background-color: #cccccc;
+    z-index: 1;
+    position: relative;
+    margin-left: 0px;
+    padding: 20px;
   }
 
 }
