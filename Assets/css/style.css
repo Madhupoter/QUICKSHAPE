@@ -799,7 +799,7 @@ html {
 
 
 .printsls .printslsLaser {
-  padding: 60px;
+  padding: 54px;
 }
 
 .printsls .printslsLaser h3 {
@@ -1636,7 +1636,7 @@ fieldset {
 
 
 
-@media (max-width:500px) {
+@media (max-width:478px) {
   .menutop {
     display: none !important;
   }
@@ -1647,17 +1647,23 @@ fieldset {
 
   .navbar-brand img {
     margin-top: 0px;
-    width: 100% !important;
+    width: 220px !important;
+  }
+
+  .navbar-toggler{
+    margin-top: 30px;
   }
 
   .nav-button {
     margin-top: 10px;
     display: none;
   }
-
+ 
   .banner h1 {
-    font-size: 45px;
-    line-height: unset;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bolder;
+    
   }
 
   .desk-brand {
