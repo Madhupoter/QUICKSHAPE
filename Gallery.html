@@ -7,7 +7,7 @@
     <title>QUICK SHAPE</title>
     <meta property="og:url" content="">
     <meta property="og:description" content="Your Premier Destination for Manufacturing & 3D Printing Excellence">
-    <meta property="og:image" content="https://e9ds.com/Beta/Quick_Shape/Assets/images/logo.png">
+    <meta property="og:image" content="https://quickshape.net/Assets/images/img.png">
     <link rel="shortcut icon" type="image/x-icon" href="Assets/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
@@ -40,8 +40,9 @@
                 </div>
                 <div class="col-lg-1">
                     <div class="top-right">
-                        <p><button class="careerBtn" data-bs-toggle="modal" data-bs-target="#CareerForm">Careers</button> | <button
-                                class="feedBtn" data-bs-toggle="modal" data-bs-target="#feedBack">Feedback</button></p>
+                        <p><button class="careerBtn" data-bs-toggle="modal"
+                                data-bs-target="#CareerForm">Careers</button> | <button class="feedBtn"
+                                data-bs-toggle="modal" data-bs-target="#feedBack">Feedback</button></p>
                     </div>
                 </div>
             </div>
@@ -61,7 +62,8 @@
                             <button class="navbar-toggler active" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <img src="Assets/images/ham.png" alt="" class="img-fluid ham-burger" id="myImage"
+                                    onclick="changeImage()" value="Change">
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -82,27 +84,40 @@
                                                 <a href="Printing.html" class="dropdown-item dropdown-toggle"
                                                     data-bs-toggle="dropdown">3D printing</a>
                                                 <ul class="dropdown-menu dropdown-submenu shadow">
-                                                    <li><a class="dropdown-item" href="Printing.html#FDM3DPrinting">FDM 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html#SLA3DPrinting">SLA 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html#SLS3DPrinting">SLS 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html#Metal3DPrinting">Metal 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html#PolyJet3DPrinting">Polyjet 3D Printing</a></li>
-                                                    <li><a class="dropdown-item" href="Printing.html#MJF3DPrinting">MJF 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#FDM3DPrinting">FDM
+                                                            3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLA3DPrinting">SLA
+                                                            3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#SLS3DPrinting">SLS
+                                                            3D Printing</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="Printing.html#Metal3DPrinting">Metal 3D Printing</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="Printing.html#PolyJet3DPrinting">Polyjet 3D
+                                                            Printing</a></li>
+                                                    <li><a class="dropdown-item" href="Printing.html#MJF3DPrinting">MJF
+                                                            3D Printing</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="dropdown-item" href="Vaccum_Casting.html"> Vaccum Casting</a></li>
-                                            <li><a class="dropdown-item" href="InjectionModeling.html">Injection Modeling</a> </li>
-                                            <li><a class="dropdown-item" href="CNCMachining.html"> CNC Machining</a></li>
+                                            <li><a class="dropdown-item" href="Vaccum_Casting.html"> Vaccum Casting</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="InjectionModeling.html">Injection
+                                                    Modeling</a> </li>
+                                            <li><a class="dropdown-item" href="CNCMachining.html"> CNC Machining</a>
+                                            </li>
                                             <li><a class="dropdown-item" href="Jewellary.html"> Jewellery</a></li>
-                                            <li><a class="dropdown-item" href="CAD_Designing.html"> CAD Designing</a></li>
+                                            <li><a class="dropdown-item" href="CAD_Designing.html"> CAD Designing</a>
+                                            </li>
                                             <li><a class="dropdown-item" href="LaserWorks.html">Laser Works</a></li>
-                                            <li><a class="dropdown-item" href="productPacking.html"> Product Packaging</a></li>
+                                            <li><a class="dropdown-item" href="productPacking.html"> Product
+                                                    Packaging</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                                        <a class="nav-link active" href="Gallery.html">Gallery</a>
                                     </li>
-                                    
+
                                     <li class="nav-item">
                                         <a class="nav-link" href="Resources.html">Resources</a>
                                     </li>
@@ -151,84 +166,112 @@
                         <div class="row gallery-box">
 
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/240_F_340357095_MKKjZ0CQ1MoetsDwHBSpFVjyG1PmyveA.jpg" data-fancybox="gallery1">
+                                <a href="Assets/images/Gallery/img8.png" data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/img8.png"
+                                        class="img-fluid gallery1 w-100">
+                                </a>
+                            </div>
+                            <div class="box vertical col-sm-3 mb-3">
+                                <a href="Assets/images/Gallery/img9.png" data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/img9.png"
+                                        class="img-fluid gallery1 w-100">
+                                </a>
+                            </div>
+                            
+
+                            <div class="box vertical col-sm-3 mb-3">
+                                <a href="Assets/images/Gallery/240_F_340357095_MKKjZ0CQ1MoetsDwHBSpFVjyG1PmyveA.jpg"
+                                    data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/240_F_340357095_MKKjZ0CQ1MoetsDwHBSpFVjyG1PmyveA.jpg"
                                         class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-                            
-                            
+
+
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/240_F_113834493_5RrP2g8vGgHjNmOhMjBfFNOkAn9jYcuU.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/240_F_113834493_5RrP2g8vGgHjNmOhMjBfFNOkAn9jYcuU.jpg"
+
+                                <a href="Assets/images/Gallery/istockphoto-1152433871-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1152433871-612x612.jpg"
                                         class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
+
+
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/240_F_512545798_m6oiaJ1UJqiaOmoH2UKZhWJjnTZUL4hj.jpg" data-fancybox="gallery1">
+                                <a href="Assets/images/Gallery/240_F_512545798_m6oiaJ1UJqiaOmoH2UKZhWJjnTZUL4hj.jpg"
+                                    data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/240_F_512545798_m6oiaJ1UJqiaOmoH2UKZhWJjnTZUL4hj.jpg"
                                         class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-                            
-                            
-                            <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/240_F_61013968_weOPbjunK7DG93yWWFjQXsEsPbc4VybI.jpg" data-fancybox="gallery1">
+
+
+                            <!-- <div class="box vertical col-sm-3 mb-3">
+                                <a href="Assets/images/Gallery/240_F_61013968_weOPbjunK7DG93yWWFjQXsEsPbc4VybI.jpg"
+                                    data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/240_F_61013968_weOPbjunK7DG93yWWFjQXsEsPbc4VybI.jpg"
                                         class="img-fluid gallery1 w-100">
                                 </a>
-                            </div>
-                            
-                            
+                            </div> -->
+
+
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/360_F_449975564_k4CWo5jhw4ftfwnp1oOJuvlEnFLQre0n.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/360_F_449975564_k4CWo5jhw4ftfwnp1oOJuvlEnFLQre0n.jpg"
+                                <a href="Assets/images/Gallery/istockphoto-1182074642-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1182074642-612x612.jpg"
                                         class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-                            
+
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/63109a7a3bf18cc8dc9c33d35be80321.png" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/63109a7a3bf18cc8dc9c33d35be80321.png" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-1269868014-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1269868014-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-                            
+
                             <div class="box vertical col-sm-3 mb-3">
                                 <a href="Assets/images/Gallery/download (1).jpg" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/download (1).jpg" class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-                            
+
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/download.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/download.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-1295475588-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1295475588-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-    
+
                             <div class="box vertical col-sm-3 mb-3">
                                 <a href="Assets/images/Gallery/img1.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/img1.png" class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-    
-                            <div class="box col-sm-6 mb-3">
-                                <a href="Assets/images/Gallery/img2.png" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/img2.png" class="img-fluid gallery1 w-100">
-                                </a>
-                            </div>
+
+                            
                             <div class="box vertical col-sm-3 mb-3">
                                 <a href="Assets/images/Gallery/img3.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/img3.png" class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="box vertical col-sm-3 mb-3">
                                 <a href="Assets/images/Gallery/img4.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/img4.png" class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
-    
+
+                            <div class="box col-sm-6 mb-3">
+                                <a href="Assets/images/Gallery/img2.png" data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/img2.png" class="img-fluid gallery1 w-100">
+                                </a>
+                            </div>
+
                             <div class="box col-sm-3 mb-3">
                                 <a href="Assets/images/Gallery/img5.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/img5.png" class="img-fluid gallery1 w-100">
@@ -243,108 +286,94 @@
 
 
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/img7.png" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/img7.png" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-1310924678-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1310924678-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
 
-                            
+
 
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/Fortus400_LG.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Fortus400_LG.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-                            </div>
-
-                            <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/images.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/images.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-1342548277-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1342548277-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
 
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/IMG_20230915_085701.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/IMG_20230915_085701.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-1357862990-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-1357862990-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
 
                             <div class="box vertical col-sm-3 mb-3">
-                                <a href="Assets/images/Gallery/IMG_20230916_130045.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/IMG_20230916_130045.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/istockphoto-656292902-612x612.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/istockphoto-656292902-612x612.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                             </div>
 
-                            
+                            <div class="box vertical col-sm-3 mb-3">
+
+
+                                <a href="Assets/images/Gallery/Mars Pro Series (3).PNG" data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/Mars Pro Series (3).PNG"
+                                        class="img-fluid gallery1 w-100">
+                                </a>
+
+                            </div>
+
+                            <div class="box vertical col-sm-3 mb-3 ">
+                                <video width="100%" height="350" autoplay="" loop="" muted="">
+                                    <source  src="Assets/images/Gallery/Video/video1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+
 
 
 
                             <div class="box vertical col-sm-4 mb-3 d-none">
 
-                                <a href="Assets/images/Gallery/istockphoto-1152433871-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1152433871-612x612.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/IMG_20230916_130045.jpg" data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/IMG_20230916_130045.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
-
-
-
-                                <a href="Assets/images/Gallery/istockphoto-1182074642-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1182074642-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-1269868014-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1269868014-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-1295475588-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1295475588-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-1310924678-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1310924678-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-1342548277-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1342548277-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-1357862990-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-1357862990-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/istockphoto-656292902-612x612.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/istockphoto-656292902-612x612.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
-                                <a href="Assets/images/Gallery/lotus lamd.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/lotus lamd.jpg" class="img-fluid gallery1 w-100">
-                                </a>
-
                                 <a href="Assets/images/Gallery/Mars Pro Series (2).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro Series (2).PNG" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Mars Pro Series (2).PNG"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Mars Pro Series (1).jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro Series (1).jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Mars Pro Series (1).jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
-                                <a href="Assets/images/Gallery/Mars Pro Series (3).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro Series (3).PNG" class="img-fluid gallery1 w-100">
-                                </a>
 
                                 <a href="Assets/images/Gallery/Mars Pro Series (4).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro Series (4).PNG" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Mars Pro Series (4).PNG"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
 
                                 <a href="Assets/images/Gallery/Mars Pro Series (5).jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro Series (5).jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Mars Pro Series (5).jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Mars Pro1600-3.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Mars Pro1600-3.jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Mars Pro1600-3.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
 
-                                <a href="Assets/images/Gallery/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png" data-fancybox="gallery1">
+                                <!-- <a href="Assets/images/Gallery/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png" class="img-fluid gallery1 w-100">
                                 </a>
 
@@ -358,59 +387,73 @@
 
                                 <a href="Assets/images/Gallery/_20221108150927.jpg" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/_20221108150927.jpg" class="img-fluid gallery1 w-100">
-                                </a>
+                                </a> -->
                                 <a href="Assets/images/Gallery/2232.png" data-fancybox="gallery1">
                                     <img src="Assets/images/Gallery/2232.png" class="img-fluid gallery1 w-100">
                                 </a>
 
-                                <a href="Assets/images/Gallery/3-D printer Images/Fortus400_LG.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/3-D printer Images/Fortus400_LG.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/3-D printer Images/Fortus400_LG.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/3-D printer Images/Fortus400_LG.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
-                                <a href="Assets/images/Gallery/3-D printer Images/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/3-D printer Images/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/3-D printer Images/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/3-D printer Images/PJ Eden 260 VS Front Closed Transparent - Support Center Printer Page Image.png"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
-                                <a href="Assets/images/Gallery/3-D printer Images/b7f4895d3c886d10ed6d5632acc85895_69919.png" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/3-D printer Images/b7f4895d3c886d10ed6d5632acc85895_69919.png" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/3-D printer Images/b7f4895d3c886d10ed6d5632acc85895_69919.png"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/3-D printer Images/b7f4895d3c886d10ed6d5632acc85895_69919.png"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
-                                <a href="Assets/images/Gallery/3-D printer Images/_20221108150927.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/3-D printer Images/_20221108150927.jpg" class="img-fluid gallery1 w-100">
+                                <a href="Assets/images/Gallery/3-D printer Images/_20221108150927.jpg"
+                                    data-fancybox="gallery1">
+                                    <img src="Assets/images/Gallery/3-D printer Images/_20221108150927.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Pic/Mars Pro Series (1).jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (1).jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (1).jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Pic/Mars Pro Series (2).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (2).PNG" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (2).PNG"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Pic/Mars Pro Series (3).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (3).PNG" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (3).PNG"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
                                 <a href="Assets/images/Gallery/Pic/Mars Pro Series (4).PNG" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (4).PNG" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (4).PNG"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                                 <a href="Assets/images/Gallery/Pic/Mars Pro Series (5).jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (5).jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro Series (5).jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
                                 <a href="Assets/images/Gallery/Pic/Mars Pro1600-3.jpg" data-fancybox="gallery1">
-                                    <img src="Assets/images/Gallery/Pic/Mars Pro1600-3.jpg" class="img-fluid gallery1 w-100">
+                                    <img src="Assets/images/Gallery/Pic/Mars Pro1600-3.jpg"
+                                        class="img-fluid gallery1 w-100">
                                 </a>
 
 
 
 
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                 </div>
-    
+
             </div>
         </div>
         <!-- <div class="text-center  mt-5">
@@ -420,7 +463,7 @@
 
 
 
-    
+
     <section class="Clients banner6">
         <div class="container">
             <div class="row">
@@ -482,32 +525,34 @@
                 <div class="col-lg-2">
                     <div class="usefulLinks">
                         <h4 class="fw-bold text-uppercase">Quick links</h4>
-                        <a href="">
+                        <a href="About.html">
                             <li>About</li>
                         </a>
-                        <a href="">
+                        <a href="Printing.html">
                             <li>Service</li>
                         </a>
-                        <a href="">
-                            <li>Gallery</li>
+                        <a href="Gallery.html">
+                            <li class="active">Gallery</li>
                         </a>
-                        <a href="">
+                        <a href="Resources.html">
                             <li>Resources</li>
                         </a>
-                        <a href="">
+                        <a href="Industries.html">
                             <li>Industries</li>
                         </a>
-                        <a href="">
+                        <a href="CSRPolicy.html">
                             <li>CSR Policy</li>
+                        </a>
+                        <a href="ContactUs.html#CONTACTUS">
+                            <li>Contact Us</li>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <h4 class="fw-bold text-uppercase">Address</h4>
                     <h5 class="fw-bold">QUICK SHAPE PVT LTD</h5>
-                    <p>#25, 14th Cross, 9th Main, Sector 6,
-                        HSR Layout, Bangalore - 560 102</p>
-                    <p>Ph : 78998 26206</p>
+                    <p>6/1, Tavarekere Main Rd, DRC Post, Balaji Nagar, S.G. Palya, Bengaluru, Karnataka 560029</p>
+                    <p>Ph : +91 99722 80123</p>
                     <p>Gmail : connect@quickshape.net</p>
 
                     <div class="footer_icons">
@@ -535,14 +580,13 @@
     <div class="copyright">
         <div class="text-center">
             <div>
-                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 Quick Shape. All rights reserved. Designed by
+                <p class="mb-0 text-white">Copyright <span>&#169;</span> 2023 Quick Shape. All rights reserved. Designed
+                    by
                     <a href="https://www.enternine.com/">E9ds</a>
                 </p>
             </div>
         </div>
     </div>
-
-
 
 
     <!-- Modal -->
@@ -554,32 +598,36 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="submit_career_form.php" method="post" enctype="multipart/form-data" id="getinTouchForm">
-    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-    
-                        <label for="position">Position:</label>
-                        <input type="text" id="position" name="position" required><br>
-    
+                    <form action="submit_career_form.php" method="post" enctype="multipart/form-data">
+                        <label for="name">Name:</label> <br>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <br>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <br>
+                        <label for="position">Position:</label> <br>
+                        <input type="text" id="position" name="position" required>
+                        <br>
+                        <br>
                         <label for="message">Cover Letter:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-    
+                        <textarea id="message" name="message" rows="3" cols="50" required></textarea>
+                        <br>
+                        <br>
                         <label for="resume">Resume (PDF only):</label>
-                        <input type="file" id="resume" name="resume" accept=".pdf" required><br>
-    
-                        <div class="mt-2">
-                            <button type="submit">Submit</button>
-                        </div>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+                        <input class="mt-3 submitbutton" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
+
+
+
+
     <!-- Modal -->
     <div class="modal fade" id="feedBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -589,31 +637,48 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="getinTouchForm" action="" method="post">
-                        <fieldset>
-                            <input placeholder="name" type="text" tabindex="1" required autofocus>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Email Address" type="email" tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Phone Number" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset>
-                            <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
-                        </fieldset>
-                        <div class="">
-                            <button type="submit">Submit</button>
+                    <form name="form" id="booking" onsubmit="return Submit()" role="form" action="Feedback.php"
+                        method="post">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group mb-2">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input class="form-control" name="name" id="name" type="text"
+                                        placeholder="Enter your name" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group mb-2">
+                                    <label for="exampleInputEmail1">Mobile</label>
+                                    <input class="form-control" name="mobile" id="mobile" type="text"
+                                        placeholder="Enter Mobile" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input class="form-control" name="email" id="email" type="email"
+                                        placeholder="Enter email address" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group mb-2">
+                                    <label for="exampleInputEmail1">Your Messsage</label>
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3"
+                                        placeholder="Enter Message" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" name="submit" class="submit" value="SEND MESSAGE">
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
 
 
 
@@ -631,14 +696,39 @@
 
     <script>
         $('.slide-show').slick({
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
             dots: false,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     </script>
+
+
     <style>
         .mains {
             width: 1200px;
@@ -657,6 +747,19 @@
             border: 1px solid #B2BEB5;
         }
     </style>
+
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("Assets/images/ham.png")) {
+                image.src = "Assets/images/ham2.png";
+            }
+            else {
+                image.src = "Assets/images/ham.png";
+            }
+        }
+    </script>
 
 
 </body>

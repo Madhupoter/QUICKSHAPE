@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Raleway&family=Roboto&display=swap');
 
+@import "https://unpkg.com/transition-style";
+
 * {
   padding: 0;
   margin: 0;
@@ -74,13 +76,13 @@ html {
 }
 
 .navbar-brand {
-  /* width: 36%; */
+  width: 214px;
   /* margin-top: -30px; */
   text-align: center;
 }
 
 .navbar-brand img {
-  margin-top: -18px;
+  margin-top: -40px;
   /* width: 50% !important; */
 }
 
@@ -182,9 +184,11 @@ html {
   color: #fff;
 }
 
-/* .dropend .dropdown-toggle {
+/*
+.dropend .dropdown-toggle {
   margin-left: 1em;
-} */
+}
+*/
 
 .dropdown-item:hover {
   color: #fff;
@@ -199,6 +203,56 @@ html {
   display: block;
 }
 
+
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+
 @media screen and (min-width: 769px) {
   .dropend:hover>.dropdown-menu {
     position: absolute;
@@ -207,6 +261,7 @@ html {
   }
 
 }
+
 
 
 @media (min-width: 992px) {
@@ -248,10 +303,19 @@ html {
   margin-bottom: 10px;
 }
 
+.fa-phone {
+  border: 2px solid #000!important;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 6px;
+}
+
 .menutop .top-left p {
   margin-bottom: 0px !important;
   padding-bottom: 15px;
+  font-size: 16px;
 }
+
 
 .menutop .top-left {
   margin-right: 30px;
@@ -260,28 +324,50 @@ html {
 
 .top-right {
   width: 150px;
+  margin-top: 6px;
 }
+
 
 .menutop .top-right p {
   margin-bottom: 0px !important;
+  font-size: 16px;
 }
 
-.banner {
+/* .banner {
   margin-top: 50px;
-}
+} */
 
 .banner h1 {
-  font-size: 60px;
-  line-height: 65px;
+  font-size: 40px;
+  line-height: 50px;
 }
 
 .banner h1 span {
   color: #f49627;
 }
 
+/* .banner .bannerText{
+  margin-top: -320px;
+  text-align: center;
+  overflow: hidden;
+} */
+
+
+
+/* .video_section{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 80vh;
+} */
+
+.video_section video{
+  width: 100%;
+}
 
 .banner1 {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .banner1 h1 {
@@ -378,12 +464,28 @@ html {
   list-style: url(../images/listStyle.png);
 }
 
+
 .banner3 {
   margin: 50px 0;
   padding: 50px 0;
   background-color: #ebebeb;
 }
 
+@keyframes circle-swoop {
+  from {
+    clip-path: var(--circle-top-right-out);
+  }
+
+  to {
+    clip-path: var(--circle-bottom-right-in);
+  }
+}
+
+.--in-custom {
+  --transition__duration: 1s;
+  --transition__easing: ease-in-out;
+  animation-name: circle-swoop;
+}
 
 .banner3 .industries {
   border: 1px solid #000;
@@ -1580,7 +1682,27 @@ fieldset {
 }
 
 
+.usefulLinks .active{
+  color: darkorange;
+  font-weight: 800;
+}
 
+
+.modal-body form{
+  padding: 20px;
+}
+
+.modal-body form label {
+  font-weight: bold !important;
+}
+
+.modal-body form input{
+  width: 100%;
+}
+
+ .submitbutton{
+  background-color: #f49627;
+ }
 
 
 
@@ -1651,7 +1773,7 @@ fieldset {
   }
 
   .navbar-toggler{
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   .nav-button {
@@ -1800,6 +1922,9 @@ fieldset {
     position: relative;
     margin-left: 0px;
     padding: 20px;
+  }
+  .ham-burger{
+    width: 50px;
   }
 
 }
