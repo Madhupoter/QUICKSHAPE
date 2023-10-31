@@ -7,7 +7,7 @@
     <title>QUICK SHAPE</title>
     <meta property="og:url" content="">
     <meta property="og:description" content="Your Premier Destination for Manufacturing & 3D Printing Excellence">
-    <meta property="og:image" content="https://e9ds.com/Beta/Quick_Shape/Assets/images/logo.png">
+    <meta property="og:image" content="https://quickshape.net/Assets/images/img.png">
     <link rel="shortcut icon" type="image/x-icon" href="Assets/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
@@ -61,7 +61,8 @@
                             <button class="navbar-toggler active" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <img src="Assets/images/ham.png" alt="" class="img-fluid ham-burger" id="myImage" onclick="changeImage()"
+                                    value="Change">
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -107,7 +108,7 @@
                                         <a class="nav-link" href="Resources.html">Resources</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Industries.html">Industries</a>
+                                        <a class="nav-link active" href="Industries.html">Industries</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="CSRPolicy.html">CSR Policy</a>
@@ -439,32 +440,34 @@
                 <div class="col-lg-2">
                     <div class="usefulLinks">
                         <h4 class="fw-bold text-uppercase">Quick links</h4>
-                        <a href="">
+                        <a href="About.html">
                             <li>About</li>
                         </a>
-                        <a href="">
+                        <a href="Printing.html">
                             <li>Service</li>
                         </a>
-                        <a href="">
+                        <a href="Gallery.html">
                             <li>Gallery</li>
                         </a>
-                        <a href="">
+                        <a href="Resources.html">
                             <li>Resources</li>
                         </a>
-                        <a href="">
-                            <li>Industries</li>
+                        <a href="Industries.html">
+                            <li class="active">Industries</li>
                         </a>
-                        <a href="">
+                        <a href="CSRPolicy.html">
                             <li>CSR Policy</li>
+                        </a>
+                        <a href="ContactUs.html#CONTACTUS">
+                            <li>Contact Us</li>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <h4 class="fw-bold text-uppercase">Address</h4>
                     <h5 class="fw-bold">QUICK SHAPE PVT LTD</h5>
-                    <p>#25, 14th Cross, 9th Main, Sector 6,
-                        HSR Layout, Bangalore - 560 102</p>
-                    <p>Ph : 78998 26206</p>
+                    <p>6/1, Tavarekere Main Rd, DRC Post, Balaji Nagar, S.G. Palya, Bengaluru, Karnataka 560029</p>
+                    <p>Ph : +91 99722 80123</p>
                     <p>Gmail : connect@quickshape.net</p>
 
                     <div class="footer_icons">
@@ -501,74 +504,96 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="CareerForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">QUICK SHAPE</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="submit_career_form.php" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <br>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="position">Position:</label> <br>
+                    <input type="text" id="position" name="position" required>
+                    <br>
+                    <br>
+                    <label for="message">Cover Letter:</label><br>
+                    <textarea id="message" name="message" rows="3" cols="50" required></textarea>
+                    <br>
+                    <br>
+                    <label for="resume">Resume (PDF only):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required>
 
-    <!-- Modal -->
-    <div class="modal fade" id="CareerForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICK SHAPE</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="submit_career_form.php" method="post" enctype="multipart/form-data" id="getinTouchForm">
-    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-    
-                        <label for="position">Position:</label>
-                        <input type="text" id="position" name="position" required><br>
-    
-                        <label for="message">Cover Letter:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-    
-                        <label for="resume">Resume (PDF only):</label>
-                        <input type="file" id="resume" name="resume" accept=".pdf" required><br>
-    
-                        <div class="mt-2">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    <input class="mt-3 submitbutton" type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    <!-- Modal -->
-    <div class="modal fade" id="feedBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">QUICKSHAPE</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="getinTouchForm" action="" method="post">
-                        <fieldset>
-                            <input placeholder="name" type="text" tabindex="1" required autofocus>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Email Address" type="email" tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Phone Number" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset>
-                            <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
-                        </fieldset>
-                        <div class="">
-                            <button type="submit">Submit</button>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="feedBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">QUICKSHAPE</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="form" id="booking" onsubmit="return Submit()" role="form" action="Feedback.php"
+                    method="post">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input class="form-control" name="name" id="name" type="text"
+                                    placeholder="Enter your name" required="">
+                            </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Mobile</label>
+                                <input class="form-control" name="mobile" id="mobile" type="text"
+                                    placeholder="Enter Mobile" required="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input class="form-control" name="email" id="email" type="email"
+                                    placeholder="Enter email address" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Your Messsage</label>
+                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3"
+                                    placeholder="Enter Message" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" name="submit" class="submit" value="SEND MESSAGE">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-
+</div>
 
 
 
@@ -588,12 +613,35 @@
 
     <script>
         $('.slide-show').slick({
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
             dots: false,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     </script>
     <style>
@@ -614,6 +662,18 @@
             border: 1px solid #B2BEB5;
         }
     </style>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("Assets/images/ham.png")) {
+                image.src = "Assets/images/ham2.png";
+            }
+            else {
+                image.src = "Assets/images/ham.png";
+            }
+        }
+    </script>
 
 
 </body>

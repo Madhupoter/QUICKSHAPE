@@ -3,18 +3,18 @@
 
     if ($("#header").length > 0) {
         $(window).on('scroll', function() {
-            if ($(window).scrollTop() >100) {
+            if ($(window).scrollTop() >0) {
                 $("#header").css("position", "fixed");
                 $("#header").css("width", "100%");
                 // $("#header").css("padding", "10px");
                 // $(".navbar-brand").css("margin-top", "36px");
-                $(".navbar-brand img").css("width", "50%");
+                // $(".navbar-brand img").css("width", "50%");
             } else {
                 $("#header").css("position", "relative");
                 $("#header").css("width", "100%");
                 // $("#header").css("padding", "0px");
                 $(".navbar-brand").css("margin-top", "0px");
-                $(".navbar-brand img").css("width", "100%");
+                // $(".navbar-brand img").css("width", "100%");
             }
         });
     }
