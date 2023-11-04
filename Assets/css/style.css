@@ -67,6 +67,8 @@ html {
   padding: 7px;
 }
 
+
+
 .media .social_media a {
   border: 1px solid #fff;
   padding: 7px;
@@ -95,8 +97,16 @@ html {
   font-size: 16px;
 }
 
+.navbar-nav:hover > :not(:hover){
+  opacity: 0.4;
+}
+
 .navbar-nav .dropdown-menu li a {
   color: #000 !important;
+}
+
+.navbar-nav .dropdown-menu:hover> :not(:hover) {
+  opacity: 0.4;
 }
 
 .navbar-nav li:nth-child(-n + 7):after {
@@ -183,6 +193,8 @@ html {
 .navbar-nav .nav-link {
   color: #fff;
 }
+
+
 
 /*
 .dropend .dropdown-toggle {
